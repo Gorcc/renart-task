@@ -1,0 +1,130 @@
+.product-card {
+  width: 300px;
+  margin: 0 auto;
+
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.product-image {
+  background: #ffffff;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+
+  img {
+    height: 200px;
+    background-color: #f7f7f7;
+    border-radius: 5%;
+    width: auto;
+    max-width: 100%;
+  }
+}
+
+.product-colors {
+  display: flex;
+  gap: 8px;
+  margin: 8px 0;
+}
+
+.product-colors button {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  cursor: pointer;
+  font-size: 0; 
+  transition: all 0.2s ease;
+}
+
+.product-colors button:hover {
+  transform: scale(1.1);
+}
+
+.product-colors button.active {
+  border: 1px solid #fff;      
+  outline: 1px solid #000;    
+  outline-offset: 2px;         
+  transform: scale(1.1);
+}
+
+.product-colors button:nth-child(1) {
+  background-color: var(--yellow-gold, #e6ca97);
+}
+
+.product-colors button:nth-child(2) {
+  background-color: var(--white-gold, #d9d9d9);
+}
+
+.product-colors button:nth-child(3) {
+  background-color: var(--rose-gold, #e1a4a9);
+}
+
+.product-stars {
+  margin-top: 4px;
+}
+
+.carousel-container {
+  position: relative;
+}
+
+.slick-arrow {
+  position: absolute !important;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.slick-prev {
+  left: -80px !important;  
+}
+
+.slick-next {
+  right: -60px !important; 
+}
+
+/* Responsive work */
+
+@media (max-width: 1200px) {
+  .product-card {
+    width: 280px;
+    padding: 18px;
+  }
+  
+  .product-image img {
+    height: 180px;
+  }
+}
+
+@media (max-width: 900px) {
+  .product-card {
+    width: 260px;
+    padding: 16px;
+  }
+  
+  .product-image {
+    margin-bottom: 16px;
+  }
+  
+  .product-image img {
+    height: 160px;
+  }
+}
+
+@media (max-width: 600px) {
+  .product-card {
+    width: 280px;
+    padding: 20px;
+    margin: 0 auto;
+  }
+  
+  .product-image img {
+    height: 200px;
+  }
+}
+
