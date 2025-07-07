@@ -26,13 +26,13 @@ function parseFilters(searchParams) {
 
   const minPrice = searchParams.get("minPrice");
   const maxPrice = searchParams.get("maxPrice");
-  if (minPrice) filters.minPrice = parseFloat(minPrice);
-  if (maxPrice) filters.maxPrice = parseFloat(maxPrice);
+  if (minPrice !== null) filters.minPrice = parseFloat(minPrice);
+  if (maxPrice !== null) filters.maxPrice = parseFloat(maxPrice);
 
   const minPopularity = searchParams.get("minPopularity");
   const maxPopularity = searchParams.get("maxPopularity");
-  if (minPopularity) filters.minPopularity = parseFloat(minPopularity);
-  if (maxPopularity) filters.maxPopularity = parseFloat(maxPopularity);
+  if (minPopularity !== null) filters.minPopularity = parseFloat(minPopularity);
+  if (maxPopularity !== null) filters.maxPopularity = parseFloat(maxPopularity);
 
   return filters;
 }
@@ -40,22 +40,22 @@ function parseFilters(searchParams) {
 function applyFilters(products, filters) {
   return products.filter((product) => {
     // Price range
-    if (filters.minPrice && parseFloat(product.price) < filters.minPrice) {
+    if (filters.minPrice !== undefined && parseFloat(product.price) < filters.minPrice) {
       return false;
     }
-    if (filters.maxPrice && parseFloat(product.price) > filters.maxPrice) {
+    if (filters.maxPrice !== undefined && parseFloat(product.price) > filters.maxPrice) {
       return false;
     }
 
     // Popularity score
     if (
-      filters.minPopularity &&
+      filters.minPopularity !== undefined &&
       product.popularityScore < filters.minPopularity
     ) {
       return false;
     }
     if (
-      filters.maxPopularity &&
+      filters.maxPopularity !== undefined &&
       product.popularityScore > filters.maxPopularity
     ) {
       return false;

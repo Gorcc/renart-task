@@ -16,7 +16,8 @@ export default function CarouselArrow({ direction, onClick, className, style }) 
         zIndex: 2,
         display: "flex",
         alignItems: "center",
-        justifyContent: "center"
+        justifyContent: "center",
+        padding: "0 20px"
       }}
     >
       {direction === "left" ? (
