@@ -1,7 +1,6 @@
 # Renart Fullstack Internship Case Study
 
-![Renart Global]([https://media.licdn.com/dms/image/v2/D4D3DAQEZKndThXDMPA/image-scale_191_1128/B4DZcSCFYZGcAg-/0/1748354228457/renartglobal_cover?e=1752512400&v=beta&t=IwhRJQM1OqZcg-NyxgUguQNnHWtkQ3pJZj5vYtc1Zn4](https://media.licdn.com/dms/image/v2/D4D0BAQFkihBBAQTXlw/company-logo_200_200/B4DZcwdhBbHMAM-/0/1748864734258/renartglobal_logo?e=2147483647&v=beta&t=PKIEyzSbqEWbFHl3k_qjJX9K9QS0eZF3ykBPz5EI6-Q))
-
+![Renart Global](https://media.licdn.com/dms/image/v2/D4D3DAQEZKndThXDMPA/image-scale_191_1128/B4DZcSCFYZGcAg-/0/1748354228457/renartglobal_cover?e=1752512400&v=beta&t=IwhRJQM1OqZcg-NyxgUguQNnHWtkQ3pJZj5vYtc1Zn4)
 ## 🛠 Tech Stack
 **Frontend:** React.js, Next.js, SCSS, TailwindCSS
 
